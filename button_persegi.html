@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<title>Tugas Euy</title>
+</head>
+<body>
+<script>
+	function persegi(){
+	var a = prompt("Masukan Sisi:");
+	var rumus = a*a;
+	var kelpp = 4*a;
+	var hasil = alert("Luas Persegi:"+rumus);
+	var kelppp = alert("Keliling Persegi:"+kelpp);
+
+	}
+	function persegip(){
+		var panjang = prompt("Masukan Panjang:");
+		var lebar = prompt("Masukan Lebar:");
+		var r = panjang*lebar;
+		var kelp = 2*(Number (panjang) + Number (lebar));
+		var dadi = alert("Luas Persgi Panjang:"+r);
+		var hasilp = alert("Keliling Persegi Panjang:"+kelp);
+	}
+	function segitiga(){
+		var alas = prompt("Masukan Alas:");
+		var tinggi = prompt("Masukan Tinggi:");
+		var b = prompt("Masukan sisi B:");
+		var c =  prompt("Masukan sisi c:");
+		var kelili = Number (b) + Number (c) + Number (alas);
+		var luase = alas*tinggi /2;
+		var hsl = alert("Luas Segitigas:"+luase);
+		var keli = alert("Keliling Segitigas:"+kelili);
+	}
+	function trapesium(){
+		var du = prompt("Masukan Sisi Atas:");
+		var ba = prompt("Masukan Sisi Bawah:");
+		var tg = prompt("Masukan Sisi Tinggi:");
+		var st = prompt("Masukan Sisi Samping:");
+		var mt = prompt("Masukan Sisi Miring:");
+		var lt = Number (du) + Number (ba) * tg / 2;
+		var kt = Number (du) + Number (ba) + Number (st) + Number (mt);
+		var ht = alert("Luas Trapesium :"+lt+"||"+ "Keliling Trapesium"+kt);
+	}
+	function ll(){
+		var d1 = prompt("Masukan Diagonal 1 :");
+		var d2 = prompt("Masukan Diagonal 2 :");
+		var sa = prompt("Masukan Sisi A:");
+		var sb = prompt("Masukan Sisi B:");
+		var kell= 2*(Number (sa) + Number (sb));
+		var luasl = d1*d2 / 2;
+		var hasill= alert("Luas Layang-Layang:"+luasl);
+		var hasilk = alert("Keliling Layang-Layang:"+kell);
+	}
+
+</script>
+<div class="button">
+<input type="button" value="Persegi" onclick="persegi()">
+</div>
+<div class="button">
+<input type="button" value="Persegi Panjang" onclick="persegip()">
+</div>
+<div class="button">
+<input type="button" value="Segitiga" onclick="segitiga()">
+</div>
+<div class="button">
+<input type="button" value="Trapezium" onclick="trapesium()">
+</div>
+<div class="button">
+<input type="button" value="Layang-Loyang" onclick="ll()">
+</div>
+</body>
+</html>
